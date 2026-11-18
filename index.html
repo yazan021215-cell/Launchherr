@@ -1,58 +1,82 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>POWER Launcher</title>
 <style>
+* { box-sizing: border-box; }
 body {
-  background: #080808;
+  margin: 0;
+  background: #090909;
   color: white;
-  font-family: Arial;
-  text-align: center;
+  font-family: Arial, sans-serif;
   padding: 25px;
 }
-.logo {
+header {
   color: #ffcc00;
-  font-size: 35px;
+  font-size: 28px;
   font-weight: bold;
-  margin-top: 40px;
+  margin: 20px 0 35px;
+}
+.card {
+  background: #171717;
+  border: 1px solid #333;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 18px;
+}
+select {
+  width: 100%;
+  padding: 14px;
+  background: #252525;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 8px;
 }
 button {
+  width: 100%;
+  padding: 16px;
   background: #ffcc00;
   color: black;
-  border: 0;
-  padding: 17px;
-  width: 90%;
-  border-radius: 10px;
+  border: none;
+  border-radius: 9px;
   font-size: 18px;
   font-weight: bold;
-  margin-top: 20px;
 }
-.box {
-  background: #171717;
-  padding: 20px;
-  border-radius: 12px;
-  margin-top: 25px;
-}
+small { color: #999; }
 </style>
 </head>
 <body>
-<div class="logo">⚡ POWER</div>
+
+<header>⚡ POWER</header>
 <p>MINECRAFT JAVA LAUNCHER</p>
 
-<div class="box">
-<h3>Game Version</h3>
-<select id="version">
-<option>1.21.11</option>
-<option>1.21.8</option>
-<option>1.20.1</option>
-</select>
-<br>
-<button onclick="alert('POWER Launcher UI is ready!')">
-PLAY
-</button>
+<div class="card">
+  <h3>Game Version</h3>
+  <select>
+    <option>1.21.11</option>
+    <option>1.21.8</option>
+    <option>1.20.1</option>
+  </select>
 </div>
+
+<div class="card">
+  <h3>Account</h3>
+  <small>Microsoft account integration coming soon</small>
+</div>
+
+<div class="card">
+  <h3>Launcher</h3>
+  <button onclick="alert('POWER Launcher interface ready!')">
+    PLAY
+  </button>
+</div>
+
+<p style="text-align:center;color:#777">
+POWER NETWORK • UNOFFICIAL PROJECT
+</p>
 
 </body>
 </html>
